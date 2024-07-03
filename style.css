@@ -83,7 +83,8 @@ body{
 }
 
 .paragraphs{
-	padding: 1em 2em;
+	font-size: 1.8rem;
+	padding: 1em 1em;
 	width: 10em
 }
 
@@ -120,7 +121,7 @@ body{
 }
 
 .cards h2{
-	font-size: 2.5rem;
+	font-size: 2.3rem;
 	margin-top: -1em;
 }
 
@@ -255,6 +256,11 @@ body{
 	.cards{
 		width: 50%;
 	}
+
+	.paragraphs{
+		font-size: 2.5rem;
+	}
+
 }
 
 @media(min-width:1200px){
@@ -281,4 +287,6 @@ body{
   		margin-right: auto;
 		margin-bottom: 3em;
 	}
+
+
 }
