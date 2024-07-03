@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	overflow-x: hidden;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* COLORS:
+	VERDE: #0D553F
+	BLANCO: #FBF2E1
+	ROSA: #DB0176
+	NEGRO: #1E1E1E
+	AZUL: #0952A3
+	AMARILLO: #F2A71F
+	NARANJA: #E96C3B
+*/
+
+body{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 2rem;
+	color: #1E1E1E;
+}
+
+.header{
+	background-color: #0D553F;
+	width: 100%;
+	
+}
+
+.logo{
+	max-width: 60%;
+	margin-bottom: 2em;
+}
+
+.tittle{
+	transform: scale(0.7);
+	margin-left: -1em;
+}
+
+.paragraphs{
+	padding: 1em 2em;
+	width: 10em
+}
+
+
+.tittle{
+	width: 80%;
+}
+
+.redes{
+	padding: 2em;
+}
+
+.socials{
+	height: 40px;
+	padding: .25em;
+	cursor: pointer;
+	filter: invert(93%) sepia(7%) saturate(1007%) hue-rotate(322deg) brightness(107%) contrast(97%);
+}
+
+.socials:hover{
+	opacity: .65;
+}
+
+
+.cards{
+	height: 3.5em;
+	padding: 5em 1.5em;
+	margin: 1em;
+	border-radius: 8px;
+	color: #FBF2E1;
+	/* transform: translateY(25px);
+	transition: transform 0.6s; */
+	position: relative;
+}
+
+.cards h2{
+	font-size: 2.5rem;
+	margin-top: -1em;
+}
+
+.workButton{
+	text-decoration: none;
+	color: #0D553F;
+	background-color: #FBF2E1;
+	padding: .5em .75em;
+	border-radius: 28px;
+	width: 30%;
+	margin-top: .5em;
+}
+
+.workButton:hover{
+	background-color: #0D553F;
+	color: #FBF2E1;
+	border: 1px solid #FBF2E1;
+}
+
+.content{
+	font-size: 1.25rem;
+	transition: 0.6s;
+	position: absolute;
+	inset: 0;
+}
+
+.cards, .content{
+	display: flex;
+	flex-direction: column;
+}
+
+.cards:hover{
+	/* transform: translateY(0px); */
+	background: rgba(13,85,63,1);
+}
+
+.content:hover{
+	padding: 11em 2em 2em 2em;
+}
+
+.fade{
+	opacity: 0;
+}
+
+.fade:hover{
+	opacity: 1;
+}
+
+.gallery{
+	max-width: 99%;
+}
+
+.pink{
+	background-color: #DB0176;
+}
+
+.yellow{
+	background-color: #F2A71F;
+}
+
+.blue{
+	background-color:  #0952A3;
+}
+
+.orange{
+	background-color: #E96C3B;
+}
+
+
+.portfolioWords{
+	width: 14em;
+	padding: 1em;
+}
+
+.stack{
+	font-size: 1rem;
+	padding: 2em 0em;
+	text-align: center;
+	color: #0D553F;
+}
+
+.nav{
+	color: #FBF2E1;
+	padding: 2em;
+	display: flex;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.nav a{
+	text-decoration: none;
+	margin-right: 1em;
+	color: #FBF2E1;
+}
+
+.nav a:hover{
+	text-decoration: underline;
+}
+
+.socialsContact{
+	height: 4em;
+	padding: .25em;
+	filter: invert(24%) sepia(28%) saturate(1194%) hue-rotate(111deg) brightness(96%) contrast(91%);
+}
+
+.socialsContact:hover{
+	cursor: pointer;
+	filter: invert(47%) sepia(69%) saturate(868%) hue-rotate(335deg) brightness(97%) contrast(89%);
+}
+
+.footer{
+	width: 100vw;
+	background-color: #0D553F;
+}
+
+.footerTittle{
+	margin-left: 1em;
+}
+
+.portfolioP{
+	font-size: 2rem;
+	padding: 2em;
+	width: 11em;
+}
+
+@media(min-width:700px){
+	.logo,
+	.tittle{
+		max-width: 40%;
+	}
+
+	.cards{
+		width: 50%;
+	}
+}
+
+@media(min-width:1200px){
+	.logo,
+	.tittle{
+		max-width: 30%;
+	}
+
+	.logo{
+		margin-top: -3em;
+	}
+	.intro{
+		padding-top: -43em;
+	}
+
+	.works{
+		display: flex;
+	}
+
+	.gallery{
+		max-width: 70%;
+		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+		margin-bottom: 3em;
+	}
+}
