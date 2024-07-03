@@ -77,6 +77,24 @@ body{
 	margin-bottom: 2em;
 }
 
+.logoTittle{
+	font-family: "Abril Fatface", serif;
+	font-size: 10rem;
+	color: #FBF2E1;
+	padding: 0.2em;
+	line-height: .8em;
+	text-transform: uppercase;
+}
+
+.green{
+	font-size: 8rem;
+	color: #0D553F;
+}
+
+.tittleDiv{
+	max-width: 30%;
+}
+
 .tittle{
 	transform: scale(0.7);
 	margin-left: -1em;
@@ -193,14 +211,20 @@ body{
 
 .portfolioWords{
 	width: 14em;
+}
+
+.portfolioP{
+	font-size: 2rem;
 	padding: 1em;
+	width: 11em;
 }
 
 .stack{
 	font-size: 1rem;
-	padding: 2em 0em;
-	text-align: center;
+	max-width: 80%;
 	color: #0D553F;
+	padding-left: 1.5em;
+	padding-bottom: 2em;
 }
 
 .nav{
@@ -214,11 +238,19 @@ body{
 .nav a{
 	text-decoration: none;
 	margin-right: 1em;
-	color: #FBF2E1;
 }
 
-.nav a:hover{
-	text-decoration: underline;
+.navItems{
+	background-color: #FBF2E1;
+	color: #0D553F;
+	border-radius: 28px;
+	padding: .5em .75em;
+}
+
+.navItems:hover{
+	background-color: #0D553F;
+	border: 2px solid #FBF2E1;
+	color: #FBF2E1;
 }
 
 .socialsContact{
@@ -238,14 +270,10 @@ body{
 }
 
 .footerTittle{
-	margin-left: 1em;
+	font-size: 8rem;
 }
 
-.portfolioP{
-	font-size: 2rem;
-	padding: 2em;
-	width: 11em;
-}
+
 
 @media(min-width:700px){
 	.logo,
@@ -287,6 +315,5 @@ body{
   		margin-right: auto;
 		margin-bottom: 3em;
 	}
-
 
 }
