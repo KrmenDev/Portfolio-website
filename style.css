@@ -280,6 +280,9 @@ body{
 	.tittle{
 		max-width: 40%;
 	}
+	.logoTittle{
+		font-size: 16rem ;
+	}
 
 	.cards{
 		width: 50%;
@@ -315,5 +318,6 @@ body{
   		margin-right: auto;
 		margin-bottom: 3em;
 	}
+
 
 }
